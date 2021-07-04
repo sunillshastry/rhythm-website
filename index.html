@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Sunil Shastry" />
+    <meta
+      name="keywords"
+      content="Rhythm lets you search for a song performed by any artist and gives access to its lyrics, that is available to view and/or download in a text file."
+    />
+    <meta
+      name="description"
+      content="Rhythm is an open-source software written in Python 3 programming language. Rhythm is free to download and use for everyone. The main objective of the software is to accurately fetch the lyrics of any and every song available on the lyrics.ovh public API."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#5500aa" />
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#5500aa" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rhythm</title>
+  </head>
+
+  <body>
+    <main class="main__content">
+      <header class="header__content">
+        <h1 class="main-header">Rhythm <span>by Sunil Shastry.</span></h1>
+        <p class="main-intro">
+          Rhythm is an open-source software written in Python 3 programming
+          language. Rhythm is free to download and use for everyone. The main
+          objective of the software is to accurately fetch the lyrics of any and
+          every song available on the
+          <a href="https://lyricsovh.docs.apiary.io/#">lyrics.ovh</a> public
+          API.
+        </p>
+        <p class="main-intro">
+          You will find helpful resources and step-by-step guide to install and
+          run Rhythm efficiently on your computer device, on this website.
+        </p>
+      </header>
+
+      <section class="about-author">
+        <h2 class="heading">About the Author</h2>
+        <p class="main-intro">
+          Rhythm was designed and developed by Sunil Shastry. Sunil Shastry is a
+          19-year old software developer and a designer. Sunil is currently an
+          undergraduate student at the University of Saskatchewan, Canada;
+          majoring in Computer Science. He has always been fascinated about
+          learning something new in terms of computer science and programming.
+          During his first year at university, he developed the Rhythm
+          application as a “side-project”, applying all the knowledge,
+          experience and programming paradigms he learnt throughout his academic
+          year.
+        </p>
+      </section>
+
+      <section class="other-project">
+        <h2 class="heading">Other Projects</h2>
+        <p class="main-intro">
+          Sunil Shastry has designed and developed several projects using modern
+          programming languages and with best coding practices and software
+          design implementation. Please visit Sunil’s personal website or his
+          GitHub profile to view all his projects in much detail.
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2 class="heading">Contact & Hire</h2>
+        <p class="main-intro">
+          Please contact Sunil Shastry by mailing to
+          <a href="mailto:sunil.shastry69@gmail.com"
+            >sunil.shastry69@gmail.com</a
+          >
+          for any queries. Sunil is a software developer and a designer,
+          proficient in several programming languages and technologies including
+          HTML, CSS, SASS, JavaScript, Python, C, C++, ReactJS, Git, Bootstrap,
+          Figma and Adobe XD, with over three years of experience. Sunil is
+          currently an undergraduate student at the University of Saskatchewan,
+          Canada majoring in Computer Science. Please contact me for any contact
+          or hiring purpose.
+        </p>
+      </section>
+
+      <section class="install-section">
+        <h1 class="heading">Installation and Setup</h1>
+
+        <p>
+          Rhythm is designed and built using Python 3, it is recommend for the
+          user to have Python 3.5 or a higher version of Python installed on
+          their computer device. This is a console based application and
+          consequently it is assumed that the user is aware of running a Python
+          program on their console. If you do not have Python 3.5 or a higher
+          version installed, please follow the provided steps below.
+        </p>
+
+        <h3 class="small-heading">Python Installation</h3>
+        <p>
+          Installing Python for Windows and Mac by Corey Schafer:<br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YYXdXT2l-Gg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+
+        <ul class="install-steps">
+          <li>
+            To install Python, please visit the official
+            <a href="https://www.python.org/downloads/">Python.org</a> website.
+            Click on the "Download Python" button available. After downloading,
+            please make sure you initiate the actual installation process of
+            Python. (IMPORTANT NOTE: During the first few stages of the
+            installation, you will see a checkbox saying "Add Python to PATH",
+            please SELECT the check-mark!)
+          </li>
+
+          <li>
+            On finishing the Python installation process, depending on the
+            device, you <em>may</em> need to restart your device.
+          </li>
+
+          <li>
+            Once you have completed the process and rebooted your device, you
+            can run Python language right on your terminal or command prompt. To
+            run Python, open up your terminal and type the following command
+          </li>
+
+          <div class="cli">python</div>
+
+          <li>
+            However, if you see an error that pops up when you type python on
+            your terminal, it only means that you have not installed Python
+            correctly to your device. In such a case, please view the video
+            through a link I have provided above, which shows how to install
+            Python for Windows and Mac (by Corey Schafer), it can be very
+            helpful.
+          </li>
+        </ul>
+
+        <h3 class="small-heading">Command Line Navigation</h3>
+        <p>
+          Rhythm is a console based application and consequently it is assumed
+          that the user is aware of running a Python program on their console.
+          However, it is not mandatory to know it, if a person reading this is
+          not aware of any basic command line interfaces (CLI), I have included
+          a short reference below to get some idea on running the
+          <strong>main.py</strong> Rhythm file (or any Python file in that
+          regard). Open up your terminal or command prompt and try out these
+          following CLI commands.
+        </p>
+
+        <ul class="install-steps">
+          <li>
+            <span class="code">pwd</span>: The print working directory (pwd)
+            command prints the current location of your prompt, which will most
+            likely be the User files or Desktop. Type out the command to check
+            where your terminal's initial location starts from.
+          </li>
+
+          <li>
+            <span class="code">cd</span>: Change directory (cd) helps you
+            navigate from one folder to another, it is very similar to "double
+            clicking" a folder to open it, the
+            <span class="code">cd</span> command lets you do the exact same, but
+            on the command line.
+          </li>
+
+          <li>
+            <span class="code">ls</span>: List (ls) lets you view all the files
+            and folders present in a particular folder, when you type out 'ls'
+            you view all the files present at the location you're currently on
+            the command line. (PRO-TIP: you can view the hidden files present in
+            a folder by typing <span class="code">ls -a</span>)
+          </li>
+
+          <li>
+            <span class="code">clear</span>: The clear command is a little
+            different and is limited to the command line only, which means there
+            is no equivalent command for it when navigating using a GUI. The
+            <span class="code">clear</span> command is pretty simple, it clears
+            your console, it does not terminate any process, but it only builds
+            up some extra space for better visibility while using the console.
+          </li>
+        </ul>
+        <p>
+          Please know that there are a lot more CLI commands than just the ones
+          mentioned above, I have stated a few important ones for the scope of
+          the project. For programmers, CLI is a very efficient tool and it is
+          used quite often for several purposes. To learn more about CLI and CLI
+          commands, please visit the following links
+        </p>
+        <ul class="install-steps">
+          <li>
+            <a href="https://www.w3schools.com/whatis/whatis_cli.asp"
+              >What is CLI by W3Schools.</a
+            >
+          </li>
+          <li>
+            <a href="https://www.codecademy.com/articles/command-line-interface"
+              >Background of CLI article by CodeAcademy.</a
+            >
+          </li>
+          <li>
+            <a href="https://www.codecademy.com/articles/command-line-commands"
+              >List of all commands on the CLI by CodeAcademy</a
+            >
+          </li>
+        </ul>
+
+        <h3 class="small-heading">Required Packages for Rhythm</h3>
+        <p>
+          A Python library is a reusable chunk of code that you may want to
+          include in your programs/ projects. Compared to languages like C or
+          C++, Python libraries do not pertain to any specific context in
+          Python. Here, a ‘library’ loosely describes a collection of core
+          modules. The Python Standard Library is a collection of exact syntax,
+          token, and semantics of Python. It comes bundled with core Python
+          distribution.
+        </p>
+        <p>
+          Rhythm is built using the Python 3 programming language and uses the
+          following libraries:
+        </p>
+        <ul class="install-steps">
+          <li>
+            <span class="code">requests</span>: Requests is a simple, yet
+            elegant HTTP library. Requests allows you to send HTTP/1.1 requests
+            extremely easily. There’s no need to manually add query strings to
+            your URLs, or to form-encode your <span class="code">PUT</span> &
+            <span class="code">POST</span> data — but nowadays, just use the
+            <span class="code">json</span> method!
+          </li>
+
+          <li>
+            <span class="code">os</span>: This module provides a portable way of
+            using operating system dependent functionality. For this project we
+            have used <span class="code">os.path</span>. You do not have to
+            "manually" install <span class="code">os</span> as it comes with the
+            Python Standard Library.
+          </li>
+
+          <li>
+            <span class="code">rhythm</span>: This is a custom module created by
+            Sunil Shastry. You will not find this on any Python documentation
+            page, because this specific module is used only for our project. To
+            read the documentation about the
+            <span class="code">rhythm</span> module (Python class), download the
+            project from
+            <a href="https://github.com/sunillshastry/rhythm">GitHub</a> and you
+            can find <span class="code">rhythm.txt</span> file inside the
+            project.
+          </li>
+
+          <li>
+            <span class="code">termcolor</span>: This module allows ANSII color
+            formatting for output in terminal. Although this module does not
+            have anything in depth with our project, it is mainly used to make
+            the user experience better while working on the terminal.
+            Installation of this package can be omitted, although it is
+            suggested not to.
+          </li>
+
+          <li>
+            <span class="code">colorama</span>: This is also an optional module
+            that can be installed to make the user experience feel better.
+            Colorama makes ANSI escape character sequences (for producing
+            colored terminal text and cursor positioning) work under Microsoft
+            Windows.
+          </li>
+
+          <li>
+            <span class="code">pyfiglet</span>: Pyfiglet is a full port of
+            FIGlet (http://www.figlet.org/) into pure python. It takes ASCII
+            text and renders it in ASCII art fonts (like the title above, which
+            is the 'block' font). Just like the two modules mentioned above,
+            this module is not strictly required to run Rhythm but it is
+            suggested to have it installed.
+          </li>
+        </ul>
+
+        <p>
+          <strong
+            >In order to have the Rhythm application running accurately, you
+            must have the <span class="code">requests</span> library installed,
+            the rest can be omitted. However, the other packages can surely be
+            nice to have, as they help Rhythm perform better in terms of the
+            user experience.</strong
+          >
+        </p>
+
+        <h3 class="small-heading">Installing Modules</h3>
+        <p>
+          Installing a module/library in Python can be pretty simple and
+          straight-forward. It is something even a novice can easily achieve
+          without much confusion and complication. To install a package, open up
+          your terminal or command prompt and type the following.
+        </p>
+
+        <div class="cli">pip install (package-name)</div>
+        <p>
+          <span class="code">pip</span> is a package installer for Python. You
+          can use pip to install packages from the Python Package Index and
+          other indexes. <span class="code">pip</span> is the PyPA recommended
+          tool for installing Python packages. To install the required packages
+          for our project, please type the following commands:
+        </p>
+
+        <div class="cli">pip install requests</div>
+
+        <div class="cli">pip install termcolor</div>
+
+        <div class="cli">pip install colorama</div>
+
+        <div class="cli">pip install pyfiglet</div>
+
+        <p>
+          You need to install the packages one at a time, it might take some
+          time to download depending on your internet speed, once you have
+          successfully downloaded all the required modules for the project,
+          proceed ahead.
+        </p>
+
+        <p>
+          Installing Packages using <span class="code">pip</span> by Corey
+          Schafer:<br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/U2ZN104hIcc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+      </section>
+      <section class="other-info">
+        <h2 class="heading">How to use Rhythm?</h2>
+        <p>
+          Once you have downloaded and installed the project files and the
+          required Python libraries, head over to your terminal or command
+          prompt. Since Rhythm is primarily based on the console, one can use
+          the application through their terminal or command prompt only.
+          However, Rhythm provides an option for the user to download external
+          text files if needed. To run the Rhythm project, navigate to the
+          project directory using some
+          <a href="https://www.codecademy.com/articles/command-line-commands"
+            >CLI commands</a
+          >
+          and run the following command.
+        </p>
+
+        <div class="cli">python main.py</div>
+
+        <p>
+          If you are using a Mac, the above command may or may not work since
+          Mac comes with a Python 2 version pre-installed on it already. To
+          tackle this issue, please try running the following command.
+        </p>
+
+        <div class="cli">python3 main.py</div>
+
+        <p>
+          On the terminal, by writing out
+          <span class="code">python</span> followed by the Python file name, the
+          corresponding Python file is executed right in the terminal, unlike
+          most softwares that involve a "click", "hover", "drag", Rhythm is used
+          through the terminal. Such applications are generally known as console
+          applications, and on the contrary, softwares that involve such
+          "clicks", "hover" and "drag" options are known as GUI (Graphical User
+          Interface) applications.
+        </p>
+
+        <p>
+          A full reference about running Python on the command line can be found
+          <a
+            href="https://www.datacamp.com/community/tutorials/running-a-python-script"
+            >here</a
+          >
+        </p>
+
+        <p>
+          On running the Rhythm application, you will be able you enter the song
+          and artist name and the software will do its working in fetching the
+          lyrics for, this process might take a while depending on your internet
+          speed and the lyrics.ovh public API's access network. However, it is
+          very unlikely for the application to take more than a minute. On
+          receiving the response from the API, Rhythm informs you that your song
+          lyrics have successfully been loaded. At this point, you are given two
+          options, you can either view the lyrics on the terminal or you can
+          download a text file containing the lyrics to your song. The
+          application asks for an input where you are allowed to enter either
+          "view" or "text", and on pressing the "text" option, you will have to
+          provide Rhythm a name for the file and Rhythm will automatically
+          create a "downloads" folder in the same directory and your text file
+          can be present inside the "downloads" folder.
+        </p>
+
+        <h2 class="heading">Facing Issues?</h2>
+        <p>
+          Rhythm requires you to download and install loads of packages and
+          files, for a non-developer point of view, this can be very frustrating
+          and error prone. The explanations provided in this documentation may
+          or may not have the perfect description about running the software,
+          and in places where you can easily go wrong, I have provided links to
+          YouTube videos that help you visualize your tasks. However, if you are
+          still having trouble downloading any file or package, or in case you
+          find an error while running your Rhythm application, I would sincerely
+          request you to e-mail me regarding the problem. I would truly
+          appreciate it if you let me know what the problem is and when it
+          occurred. I will try my best to provide a response to you at the
+          earliest, and of course try and fix the problem that is at large with
+          Rhythm.
+        </p>
+
+        <p>
+          For any issues and queries, please e-mail me at
+          <a href="mailto:sunil.shastry69@gmail.com"
+            >sunil.shastry69@gmail.com</a
+          >
+        </p>
+
+        <h2 class="heading">References and Credits</h2>
+        <p>
+          While developing the Rhythm project, there have been a lot of external
+          tools that are used and that have been extremely helpful in the
+          process of developing the application. These include packages that
+          have made my task easier. Below, there are all the references and
+          credits that are worth mentioning for making my life easier.
+        </p>
+        <ul class="install-steps">
+          <li>
+            <a href="https://lyricsovh.docs.apiary.io/">lyrics.ovh</a> A simple
+            API to retrieve the lyrics of a song, this is the brain of the
+            Rhythm application, the lyrics provided for every song is from this
+            public API available for usage for over ten programming languages.
+          </li>
+
+          <li>
+            <a href="https://pypi.org/project/requests/">Requests Module</a>,
+            together with lyrics.ovh, requests is a Python module that helps you
+            send a request to external servers using the .get() method and
+            access the data from it. It's safe to say that the requests module
+            has truly been the brawn of the Rhythm application.
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/user/schafer5"
+              >Corey Schafer's YouTube Channel</a
+            >. Corey Schafer's YouTube channel has been very crucial not only
+            while building the application but as you could probably guess, a
+            couple of his videos proved to be vital for providing proper
+            documentation for the Rhythm application, especially for people who
+            are non-programmers.
+          </li>
+
+          <li>
+            <a href="https://pypi.org/">Python Package Index</a> is the main hub
+            for installing all and any Python package, it has provided a lot of
+            clarity while selecting for the right package, you may not know but
+            there are thousands of Python packages available and choosing the
+            best ones are always a task.
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <a href="./index.html" class="link">
+          <p>Rhythm</p>
+        </a>
+        <div class="social-media">
+          <a class="media-icon" href="https://github.com/sunillshastry/rhythm">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a class="media-icon" href="https://twitter.com/sunillshastry">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a class="media-icon" href="https://www.instagram.com/sunillshastry/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
